@@ -30,6 +30,14 @@ const SignUp = ({navigation}) => {
           label="Email Address"
           placeholder="Type your email address"
         />
+        <Gap height={16} />
+        <TextInput
+          label="Password"
+          placeholder="Type your password"
+          secureTextEntry={true}
+        />
+        <Gap height={30} />
+        <Button label="Continue" />
       </View>
     </View>
   );

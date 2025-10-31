@@ -8,13 +8,13 @@ import Gap from '../../components/atoms/Gap';
 const SignIn = () => {
   return (
     <View style={styles.container}>
-      <Header label="Sign In" />
+      <Header label="Sign up" />
       <View style={styles.contentWrapper}>
         <TextInput
           label="Email Address"
           placeholder="Type your email address"
         />
-        <Gap height={16} />
+        <Gap height={400} />
         <TextInput
           label="Password"
           placeholder="Type your password"
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
   contentWrapper: {
     marginTop: 24,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#ffffffff',
     flex: 1,
     paddingHorizontal: 24,
     paddingTop: 26,
