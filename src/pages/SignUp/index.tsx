@@ -24,6 +24,12 @@ const SignUp = ({navigation}) => {
             <NullPhoto width={120} height={120} />
           </TouchableOpacity>
         </View>
+        <TextInput label="Full Name" placeholder="Type your full name" />
+        <Gap height={16} />
+        <TextInput
+          label="Email Address"
+          placeholder="Type your email address"
+        />
       </View>
     </View>
   );
