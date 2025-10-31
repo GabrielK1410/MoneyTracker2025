@@ -25,7 +25,7 @@ const SignIn = () => {
         <Gap height={12} />
         <Button
           label="Create New Account"
-          color="#8D92A3"
+          color="#284195ff"
           textColor="#FFFFFF"
         />
       </View>
