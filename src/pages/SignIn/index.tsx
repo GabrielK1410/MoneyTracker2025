@@ -5,16 +5,16 @@ import TextInput from '../../components/molecules/TextInput';
 import Button from '../../components/atoms/Button';
 import Gap from '../../components/atoms/Gap';
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Header label="Sign up" />
+      <Header label="Sign In" />
       <View style={styles.contentWrapper}>
         <TextInput
           label="Email Address"
           placeholder="Type your email address"
         />
-        <Gap height={400} />
+        <Gap height={16} />
         <TextInput
           label="Password"
           placeholder="Type your password"
@@ -25,8 +25,9 @@ const SignIn = () => {
         <Gap height={12} />
         <Button
           label="Create New Account"
-          color="#1c3ca4ff"
-          textColor="#d6cdcdff"
+          color="#8D92A3"
+          textColor="#FFFFFF"
+          onPress={() => navigation.navigate('SignUp')}
         />
       </View>
     </View>
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   contentWrapper: {
     marginTop: 24,
-    backgroundColor: '#ffffffff',
+    backgroundColor: '#FFFFFF',
     flex: 1,
     paddingHorizontal: 24,
     paddingTop: 26,

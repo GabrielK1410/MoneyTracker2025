@@ -10,7 +10,7 @@ const SignUp = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
           <BackArrow width={24} height={24} />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Sign Up</Text>
